@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Tư Vấn 1:1 Cùng Chuyên Gia - Tháo Gỡ Nút Thắt Hôn Nhân</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Những vấn đề trong hôn nhân là những gì rất khó để có thể mở lời, để sẻ chia nếu như bạn cảm thấy không an toàn. Nhưng chỉ cần được nói thôi đối với phụ nữ chúng ta nó đã là liều thuốc chữa lành vô cùng mạnh mẽ.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Muli:wght@400;700&family=Playfair+Display:wght@400;700&family=Oswald:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy-deep:#0C0554;
+    --navy:#160A98;
+    --indigo:#2719C2;
+    --blue:#1157D4;
+    --cyan-light:#7FFFF7;
+    --cyan:#15FFF0;
+    --yellow:#FFF001;
+    --cream-bg:#FBF9F4;
+    --card-bg:#F3F4F5;
+    --text-dark:#2b2b2b;
+    --border-mint:#16C3B8;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    font-family:'Muli', sans-serif;
+    color:var(--text-dark);
+    background:var(--cream-bg);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block;}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 24px;}
+  h1,h2,h3{font-family:'Playfair Display', serif;}
+  .eyebrow{
+    display:inline-block;background:var(--cyan-light);color:var(--navy-deep);
+    font-weight:700;padding:10px 22px;border-radius:30px;font-family:'Montserrat',sans-serif;
+    font-size:15px;letter-spacing:.3px;
+  }
+
+  /* ---- Image placeholder blocks ---- */
+  .ph{
+    background:repeating-linear-gradient(45deg,#eceef2,#eceef2 10px,#e3e6ec 10px,#e3e6ec 20px);
+    border:2px dashed #9aa3b2;border-radius:10px;
+    display:flex;align-items:center;justify-content:center;
+    color:#5a6472;font-family:'Montserrat',sans-serif;font-size:13px;
+    text-align:center;padding:12px;overflow:hidden;position:relative;
+  }
+  .ph b{display:block;font-size:14px;margin-bottom:4px;color:#333;}
+  .ph span{opacity:.75;}
+  .real-img{width:100%;height:100%;object-fit:cover;display:block;border-radius:10px;}
+  .quiz-card img.real-img{border-radius:14px;}
+
+  /* placeholder for FULL-SECTION background images (texture/backdrop photos) */
+  .section-bg-ph{
+    background:repeating-linear-gradient(45deg,#e7e2f7,#e7e2f7 12px,#ded6f5 12px,#ded6f5 24px);
+    border:2px dashed #8a7bc4;border-radius:0;
+    display:flex;align-items:center;justify-content:center;
+    color:#4a3f80;font-family:'Montserrat',sans-serif;font-size:13px;text-align:center;
+    padding:14px;width:100%;
+  }
+  .section-bg-ph b{display:block;font-size:14px;margin-bottom:4px;color:#3a2f70;}
+  .section-bg-ph span{opacity:.8;}
+
+  /* small decorative icon placeholders */
+  .ph-icon{
+    background:repeating-linear-gradient(45deg,#ffe9e9,#ffe9e9 8px,#ffd9d9 8px,#ffd9d9 16px);
+    border:2px dashed #d99;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    color:#a55;font-family:'Montserrat',sans-serif;font-size:10px;text-align:center;padding:4px;
+  }
+  .ph-icon.has-img{background:none;border:none;border-radius:0;padding:0;}
+
+  /* Ảnh nền ẩn dùng chung cho: problems-section, after-section, story-section, gallery-section */
+  .shared-bg{
+    background-image:url('images/section-bg-texture.webp');
+    background-size:cover;background-position:center top;background-repeat:no-repeat;
+  }
+  .hero{
+    background:linear-gradient(180deg, var(--navy-deep) 0%, var(--navy) 55%, var(--indigo) 100%);
+    color:#fff;padding:60px 0 40px;position:relative;overflow:hidden;
+  }
+  .hero-decor-row{display:flex;gap:14px;margin-bottom:18px;}
+  .hero-decor-row .ph-icon{width:44px;height:44px;flex:0 0 auto;}
+  .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;}
+  .hero h1{
+    font-size:56px;line-height:1.15;font-weight:700;margin:10px 0 26px;
+    background:linear-gradient(180deg,#fff 0%, var(--cyan-light) 60%, var(--cyan) 100%);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .hero-cta-line{font-family:'Montserrat',sans-serif;font-weight:700;font-size:19px;margin-bottom:28px;}
+  .hero-cta-line .free{color:var(--yellow);}
+  .hero-side-list{display:flex;flex-direction:column;gap:34px;margin-bottom:10px;}
+  .hero-side-item{font-family:'Montserrat',sans-serif;font-weight:700;color:#DFFFFD;font-size:15px;text-align:center;}
+  .hero-photo-row{display:grid;grid-template-columns:2fr 1fr;gap:16px;margin-top:10px;}
+  .hero-photo-ph{aspect-ratio:1440/733;width:100%;}
+  .hero-portrait-ph{aspect-ratio:750/1250;width:100%;}
+  .hero-badge-ph{position:absolute;top:20px;right:24px;width:90px;height:90px;border-radius:16px;}
+  .hero-form{
+    background:#fff;border-radius:16px;padding:26px;margin-top:24px;max-width:480px;
+    box-shadow:0 20px 50px rgba(0,0,0,.25);
+  }
+  .form-field{
+    width:100%;border:1px dashed #7a8296;border-radius:8px;padding:14px 16px;
+    font-family:'Muli',sans-serif;font-size:15px;margin-bottom:14px;color:#333;background:#fafafa;
+  }
+  .btn-primary{
+    display:inline-block;width:100%;text-align:center;background:var(--yellow);
+    color:var(--navy-deep);font-family:'Montserrat',sans-serif;font-weight:700;
+    font-size:17px;padding:16px 20px;border:none;border-radius:10px;cursor:pointer;
+    letter-spacing:.3px;
+  }
+  .btn-primary:hover{filter:brightness(0.95);}
+
+  /* ---- Problems box ---- */
+  .problems-section{padding:70px 0;}
+  .problems-box{
+    border:2px solid var(--border-mint);border-radius:24px;padding:50px 46px;background:#fff;
+    position:relative;
+  }
+  .problems-box h2{color:var(--navy);font-size:32px;text-align:center;margin-bottom:32px;}
+  .problem-item{margin-bottom:16px;font-size:16px;}
+  .problem-item b{color:var(--indigo);}
+
+  /* ---- Transition ---- */
+  .transition-text{
+    text-align:center;font-family:'Montserrat',sans-serif;font-weight:700;color:var(--blue);
+    font-size:19px;max-width:850px;margin:0 auto 50px;line-height:1.5;
+  }
+
+  /* ---- Section background band (Có Phải -> Quote) ---- */
+  .bg-band-quiz{background:#DCEBFB;padding:20px 0 10px;}
+
+  /* ---- Quiz cards (photo blurred behind text) ---- */
+  .quiz-section{padding-bottom:70px;}
+  .quiz-section h2{text-align:center;color:var(--navy);font-size:34px;margin-bottom:34px;}
+  .quiz-intro{max-width:850px;margin:0 auto 40px;text-align:center;color:#333;font-size:16px;}
+  .quiz-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+  .quiz-card{
+    position:relative;border-radius:14px;overflow:hidden;min-height:220px;
+    display:flex;align-items:center;box-shadow:0 6px 20px rgba(0,0,0,.08);
+  }
+  .quiz-card:not(.img-only) img.real-img{position:absolute;inset:0;border-radius:0;}
+  .quiz-card .scrim{
+    position:absolute;inset:0;background:linear-gradient(180deg, rgba(255,255,255,.55), rgba(255,255,255,.9));
+  }
+  .quiz-card .txt{position:relative;padding:26px;font-size:15px;z-index:2;}
+  .quiz-card .txt b{color:var(--indigo);}
+  .quiz-card.img-only .ph{position:relative;inset:auto;width:100%;height:100%;border-radius:14px;border:2px dashed #9aa3b2;}
+
+  /* ---- Benefits alternating ---- */
+  .benefits-section{padding:20px 0 30px;}
+  .benefit-row{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center;margin-bottom:70px;}
+  .benefit-row.reverse .benefit-photo{order:2;}
+  .benefit-row.reverse .benefit-text{order:1;}
+  .benefit-photo img.real-img{aspect-ratio:750/800;width:100%;}
+  .benefit-text{font-size:17px;}
+  .benefit-text .rule{width:60px;height:2px;background:var(--blue);margin-bottom:20px;}
+  .benefit-text b{color:var(--indigo);}
+
+  /* ---- Quote block + extra decorative photo ---- */
+  .quote-wrap{display:grid;grid-template-columns:220px 1fr;gap:40px;align-items:center;max-width:1000px;margin:0 auto 60px;}
+  .quote-wrap .ph{aspect-ratio:850/950;}
+  .quote-block{color:var(--blue);font-weight:700;font-family:'Montserrat',sans-serif;font-size:18px;line-height:1.6;}
+  .quote-block .final-line{margin-top:18px;color:var(--indigo);}
+
+  /* ---- After session list (own bg image section) ---- */
+  .after-section{background:#fff;padding:0;position:relative;}
+  .after-inner{padding:60px 0;}
+  .after-section h2{text-align:center;color:var(--navy);font-size:30px;margin-bottom:34px;}
+  .after-list{max-width:820px;margin:0 auto 40px;}
+  .after-list p{margin-bottom:18px;font-size:16px;}
+  .cta-center{text-align:center;margin-top:10px;}
+  .cta-center .free-line{font-family:'Montserrat',sans-serif;font-weight:700;font-size:22px;color:var(--blue);margin-bottom:18px;}
+  .cta-center .free-line .free{color:#E01A1A;}
+  .cta-button-outline{
+    display:inline-block;background:var(--indigo);color:#fff;font-family:'Montserrat',sans-serif;
+    font-weight:700;padding:16px 40px;border-radius:10px;text-decoration:none;font-size:16px;
+  }
+
+  /* ---- Story section (own bg image) ---- */
+  .story-section{padding:0;position:relative;}
+  .story-inner{padding:70px 0;}
+  .story-header{display:grid;grid-template-columns:220px 1fr;gap:30px;align-items:center;margin-bottom:36px;}
+  .story-header img.real-img{aspect-ratio:750/1250;}
+  .story-header h2{color:var(--navy);font-size:30px;}
+  .story-text{font-size:16px;max-width:900px;margin:0 auto;}
+  .story-text p{margin-bottom:16px;}
+  .story-text .highlight{color:var(--indigo);font-weight:700;}
+  .story-inline-photos{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin:36px 0;}
+  .story-inline-photos .ph{aspect-ratio:800/800;}
+  .story-portrait-inline{max-width:360px;margin:24px auto;}
+  .story-decor-row{display:flex;justify-content:center;margin:30px 0;}
+  .story-decor-row .ph{width:220px;aspect-ratio:650/650;}
+  .story-cta{text-align:center;margin-top:20px;font-family:'Montserrat',sans-serif;font-weight:700;color:var(--indigo);}
+
+  /* ---- Gallery strip ---- */
+  .gallery-section{padding:20px 0 60px;overflow-x:auto;background:#fff;}
+  .gallery-strip{display:flex;gap:14px;padding-bottom:10px;}
+  .gallery-strip .ph{min-width:180px;aspect-ratio:650/1000;flex:0 0 auto;}
+
+  /* ---- Testimonials ---- */
+  .testi-section{background:#fff;padding:60px 0;}
+  .testi-section h2{text-align:center;color:var(--navy);font-size:28px;margin-bottom:30px;}
+  .testi-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:760px;margin:0 auto;}
+  .testi-grid .ph{aspect-ratio:3/4;}
+
+  /* ---- Final CTA / Form (own bg image) ---- */
+  .final-section{
+    position:relative;
+    background:linear-gradient(180deg, var(--navy) 0%, var(--navy-deep) 100%);
+    color:#fff;
+  }
+  .final-inner{padding:70px 0;text-align:center;}
+  .final-section .free-line{font-family:'Montserrat',sans-serif;font-weight:700;font-size:24px;margin-bottom:30px;}
+  .final-section .free-line .free{color:var(--yellow);}
+  .final-form{
+    background:#fff;border-radius:16px;padding:34px;max-width:520px;margin:0 auto;color:#333;text-align:left;
+  }
+  .final-form .note{font-size:13px;color:#666;text-align:center;margin-top:14px;}
+
+  footer{text-align:center;padding:30px 0;font-size:13px;background:var(--navy-deep);color:#aab;}
+
+  @media (max-width:900px){
+    .hero-grid{grid-template-columns:1fr;}
+    .hero h1{font-size:40px;}
+    .quiz-grid{grid-template-columns:1fr 1fr;}
+    .benefit-row{grid-template-columns:1fr;}
+    .benefit-row.reverse .benefit-photo{order:1;}
+    .benefit-row.reverse .benefit-text{order:2;}
+    .quote-wrap{grid-template-columns:1fr;}
+    .story-header{grid-template-columns:1fr;text-align:center;}
+    .story-header .ph{max-width:280px;margin:0 auto;}
+    .story-inline-photos{grid-template-columns:1fr 1fr;}
+    .testi-grid{grid-template-columns:1fr;}
+  }
+  @media (max-width:600px){
+    .quiz-grid{grid-template-columns:1fr;}
+    .problems-box{padding:30px 22px;}
+    .hero h1{font-size:32px;}
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="wrap" style="position:relative;">
+    <div class="ph-icon has-img hero-badge-ph"><img class="real-img" src="images/heart-icon.webp" style="border-radius:0;object-fit:contain;"></div>
+    <div class="hero-grid">
+      <div>
+        <span class="eyebrow">Tư vấn 1:1 cùng chuyên gia</span>
+        <h1>Tháo Gỡ<br>Nút Thắt<br>Hôn Nhân</h1>
+        <div class="hero-cta-line">Đăng Ký Ngay Hôm Nay <span class="free">HOÀN TOÀN MIỄN PHÍ</span></div>
+
+        <div class="hero-photo-row">
+          <div class="hero-photo-ph">
+            <img class="real-img" src="images/hero-bg.webp" alt="Tháo gỡ nút thắt hôn nhân">
+          </div>
+          <div class="hero-portrait-ph">
+            <img class="real-img" src="images/hero-portrait-small.webp" alt="Chân dung">
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="hero-decor-row">
+          <div class="ph-icon has-img" style="width:40px;height:40px;"><img class="real-img" src="images/tim2.webp" style="border-radius:0;object-fit:contain;"></div>
+          <div class="ph-icon has-img" style="width:40px;height:40px;"><img class="real-img" src="images/tim3.webp" style="border-radius:0;object-fit:contain;"></div>
+        </div>
+        <div class="hero-side-list">
+          <div class="hero-side-item">Giúp bạn nhìn sâu vào gốc rễ hôn nhân</div>
+          <div class="hero-side-item">Thoát khỏi vòng lặp &amp; ám ảnh tâm lý</div>
+          <div class="hero-side-item">Hiểu về chính mình và về người bạn đời của bạn</div>
+        </div>
+
+        <form class="hero-form" id="heroForm">
+          <input class="form-field" type="text" name="name" placeholder="Điền họ và tên của bạn tại đây:" required>
+          <input class="form-field" type="tel" name="phone" placeholder="Điền số điện thoại của bạn tại đây:" pattern="(\+84|0)(9|8|7|5|3)[0-9]{8}" required>
+          <button class="btn-primary" type="submit">ĐĂNG KÝ THAM GIA</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROBLEMS BOX ============ -->
+<section class="problems-section shared-bg">
+  <div class="wrap">
+    <div class="problems-box">
+      <div class="ph-icon has-img" style="position:absolute;top:-22px;left:calc(50% - 22px);width:44px;height:44px;"><img class="real-img" src="images/layer.webp" style="border-radius:0;object-fit:contain;"></div>
+      <h2>Những nút thắt trong hôn nhân...</h2>
+
+      <p class="problem-item">Chồng bạn <b>ngoại tình,</b> 1 lần, 2 lần. Bạn đã tha thứ nhưng vẫn chứng nào tật ấy, ngựa quen đường cũ.</p>
+      <p class="problem-item">Chồng bạn <b>vô tâm,</b> chỉ có bạn bè là trên hết, ra đường thì tốt với cả thiên hạ nhưng về nhà đối xử với vợ chả ra gì.</p>
+      <p class="problem-item">Cuộc sống vợ chồng bạn <b>căng thẳng,</b> thường xuyên tranh cãi, đồng sàng dị mộng.</p>
+      <p class="problem-item">Chồng bạn <b>nóng tính,</b> hay ghen tuông bóng gió, đụng chuyện gì là nổi khùng, nổi điên, bỏ đi, phóng xe ra đường.</p>
+      <p class="problem-item">Chồng bạn là người <b>gia trưởng,</b> kiểm soát mọi việc từng li từng tí, bạn luôn phải nhẫn nhịn, nhìn nét mặt chồng để sống.</p>
+      <p class="problem-item">Chồng bạn là người <b>nhu nhược,</b> chỉ nghĩ tới gia đình anh ta, luôn nghe theo lời mẹ chồng hay gia đình chồng, bỏ mặc cảm xúc của vợ.</p>
+      <p class="problem-item">Chồng bạn là người <b>tham vọng,</b> đặt công việc lên trên hết, bỏ bê gia đình vợ con và coi ngôi nhà là nơi trút bực dọc với cái mác "tôi đi làm kiếm tiền chưa đủ vất vả à".</p>
+      <p class="problem-item">Bạn không có được tay hòm chìa khóa mà <b>chồng là người kiểm soát tiền bạc,</b> chi li với vợ con từng ngàn mà ra đường rất xông xênh phóng khoáng.</p>
+      <p class="problem-item">Chồng bạn <b>ham mê cờ bạc,</b> bạn đã cứu anh ta hết lần này đến lần khác nhưng vẫn chứng nào tật nấy, không thể nào từ bỏ được.</p>
+      <p class="problem-item">Chồng bạn <b>trăng hoa,</b> đam mê gái gú ở ngoài đường, thích bóc bánh trả tiền, thích tay vịn.</p>
+      <p class="problem-item">Vợ chồng bạn <b>đang sống với nhau vì nghĩa vụ,</b> ở với nhau mà như người dưng, sống chỉ vì trách nhiệm với con chứ không có chút tình cảm nào.</p>
+      <p class="problem-item">Bạn đang phải <b>phụ thuộc tài chính vào chồng</b> và luôn sống trong cảm giác bị coi thường nhưng không thể buông được vì sợ mình không có khả năng nuôi con.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ QUIZ + BENEFITS + QUOTE (nền màu xanh nhạt, không dùng ảnh) ============ -->
+<div class="bg-band-quiz">
+
+  <!-- ============ TRANSITION + QUIZ ============ -->
+  <section class="quiz-section">
+    <div class="wrap">
+      <p class="transition-text">NẾU MỘT TRONG NHỮNG NÚT THẮT TRÊN LÀ VẤN ĐỀ LÀM CHO BẠN BỊ TỔN THƯƠNG THÌ HÃY ĐỂ MY HỎI BẠN MỘT VÀI CÂU HỎI...</p>
+      <h2>Có Phải...</h2>
+      <p class="quiz-intro">Những vấn đề trong hôn nhân là những gì rất khó để có thể mở lời, để sẻ chia nếu như bạn cảm thấy không an toàn. Nhưng chỉ cần được nói thôi đối với phụ nữ chúng ta nó đã là liều thuốc chữa lành vô cùng mạnh mẽ. Khi tham gia tư vấn cùng My bạn sẽ:</p>
+
+      <div class="quiz-grid">
+        <div class="quiz-card img-only">
+          <img class="real-img" src="images/quiz-girl.webp" alt="Có phải" style="border-radius:14px;">
+        </div>
+        <div class="quiz-card">
+          <img class="real-img" src="images/quiz-photo-1.webp" alt="">
+          <div class="scrim"></div>
+          <div class="txt">Bạn muốn có được <b>sự thấu hiểu và sẻ chia</b> từ bạn đời của mình, được chồng <b>yêu thương, chiều chuộng.</b></div>
+        </div>
+        <div class="quiz-card">
+          <img class="real-img" src="images/quiz-photo-2.webp" alt="">
+          <div class="scrim"></div>
+          <div class="txt">Bạn khao khát về <b>một mái ấm thực sự.</b> Gia đình đúng nghĩa là nơi trở về, là nơi mà sóng gió ngoài kia ngập tràn nhưng bình yên vẹn tròn sau <b>cánh cửa ấy.</b></div>
+        </div>
+        <div class="quiz-card">
+          <img class="real-img" src="images/quiz-photo-3.webp" alt="">
+          <div class="scrim"></div>
+          <div class="txt">Bạn muốn <b>được sống với con người thật của mình,</b> sống với cảm xúc thật mà không cần kìm nén, gắng gượng vì người khác.</div>
+        </div>
+        <div class="quiz-card">
+          <img class="real-img" src="images/quiz-photo-4.webp" alt="">
+          <div class="scrim"></div>
+          <div class="txt">Bạn muốn <b>vợ chồng hòa hợp, kết nối với nhau,</b> sẻ chia cùng nhau tất cả việc lớn nhỏ trong gia đình.</div>
+        </div>
+        <div class="quiz-card">
+          <img class="real-img" src="images/quiz-photo-5.webp" alt="">
+          <div class="scrim"></div>
+          <div class="txt">Bạn muốn <b>chồng từ bỏ được thói rượu chè, cờ bạc, gái gú</b> và dành sự quan tâm đến <b>gia đình.</b></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BENEFITS ALTERNATING ============ -->
+  <section class="benefits-section">
+    <div class="wrap">
+
+      <div class="benefit-row">
+        <div class="benefit-photo">
+          <img class="real-img" src="images/benefit-photo-1.webp" alt="Được lắng nghe">
+        </div>
+        <div class="benefit-text">
+          <div class="rule"></div>
+          <p>Được <b>lắng nghe</b> câu chuyện của bạn và cùng bạn <b>tháo gỡ từng nút thắt</b> trong cuộc sống hôn nhân của bạn.</p>
+        </div>
+      </div>
+
+      <div class="benefit-row reverse">
+        <div class="benefit-photo">
+          <img class="real-img" src="images/benefit-photo-2.webp" alt="Không gian riêng tư">
+        </div>
+        <div class="benefit-text">
+          <div class="rule"></div>
+          <p>Có <b>một không gian riêng tư và an toàn</b> chỉ có My và bạn để bạn có thể thoải mái chia sẻ câu chuyện của mình mà <b>không sợ ai phán xét.</b></p>
+        </div>
+      </div>
+
+      <div class="benefit-row">
+        <div class="benefit-photo">
+          <img class="real-img" src="images/benefit-photo-3.webp" alt="Hiểu về chính mình">
+        </div>
+        <div class="benefit-text">
+          <div class="rule"></div>
+          <p><b>Hiểu về chính mình, về người bạn đời và mối quan hệ</b> mà bạn đang trải qua. Những gì bạn nhận được không phải là lý thuyết sách vở, mà nó được <b>cá nhân hoá trên chính câu chuyện của bạn,</b> trên con người bạn và người bạn đời bên cạnh bạn.</p>
+        </div>
+      </div>
+
+      <div class="quote-block" style="max-width:900px;margin:0 auto 60px;text-align:center;">
+        <p>Rất nhiều chuyên gia tâm lý, rất nhiều diễn giả tình yêu và hôn nhân đã chia sẻ nhưng bạn đau khổ, vẫn đang bế tắc và thậm chí hôn nhân của bạn đang trên bờ đổ vỡ mà bạn vẫn nhận được thông điệp này từ My thì có nghĩa là chúng ta có nhân duyên với nhau.</p>
+        <p class="final-line">Chỉ khi bạn mở lòng chia sẻ, My mới có thể giúp bạn được.</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ AFTER SESSION LIST (dùng chung ảnh nền ẩn với các section còn lại) ============ -->
+<section class="after-section shared-bg">
+  <div class="after-inner">
+    <div class="wrap">
+      <h2>Sau buổi tư vấn 1:1 cùng với My, bạn sẽ:</h2>
+      <div class="after-list">
+        <p>Tháo bỏ lớp áo giáp mạnh mẽ và kiên cường để đối phó với cuộc sống, tìm lại người phụ nữ dịu dàng, giá trị và xứng đáng được yêu thương.</p>
+        <p>Hiểu được giá trị thực sự của một cuộc hôn nhân là gì và cần làm gì với cuộc hôn nhân đang bế tắc của bạn.</p>
+        <p>Có cho mình một tấm bản đồ để đi đến cái đích là hạnh phúc lứa đôi.</p>
+        <p>Chia nhỏ từng chặng đường để bạn có thể dễ dàng hoàn thành và về đích.</p>
+        <p>Một điều vô cùng quan trọng, bạn nhận thấy rõ về vai trò và giá trị của bản thân mình. Đó chính là động lực lớn nhất để bạn vun đắp lại hạnh phúc của mình.</p>
+      </div>
+      <div class="cta-center">
+        <div class="free-line">Đăng Ký Ngay Hôm Nay <span class="free">HOÀN TOÀN MIỄN PHÍ</span></div>
+        <a href="#dangky" class="cta-button-outline">ĐĂNG KÝ THAM GIA</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STORY SECTION (dùng chung ảnh nền ẩn) ============ -->
+<section class="story-section shared-bg">
+  <div class="wrap" style="padding-top:20px;">
+  </div>
+  <div class="story-inner">
+    <div class="wrap">
+      <div class="story-header">
+        <img class="real-img" src="images/story-portrait.webp" alt="Trà My" style="aspect-ratio:750/1250;">
+        <h2>Chào bạn, Tôi là Trà My</h2>
+      </div>
+
+      <div class="story-text">
+        <p>Trải qua một cuộc hôn nhân hơn 13 năm với không ít sóng gió, có những lúc tưởng chừng con thuyền hôn nhân của My đã đắm chìm trong sự thất vọng, sự mất niềm tin, không còn sự kết nối.</p>
+        <p>Trong những chuỗi ngày sống trong bóng đêm của cuộc hôn nhân, đã nhiều lần My muốn buông tay nhưng lại sợ.</p>
+        <p>- Sợ mình mang tiếng đã qua 1 đời chồng, mang tiếng là bị chồng bỏ hay bỏ chồng.<br>
+        - Sợ bố mẹ buồn vì My luôn là niềm tự hào của ông bà. Ngày cưới trang hoàng lộng lẫy, bố mẹ tin tưởng ở My nhiều đến thế nào vì đã chọn được người chồng khá hiền lành, yêu thương My.<br>
+        - Sợ 1 mình nuôi con sẽ khổ, sợ con không có tình yêu của cha.</p>
+        <p>Những nỗi sợ ấy mà My đã phải gồng mình sống trong 1 cuộc hôn nhân mà My đã tụt hết cảm giác yêu vì thất vọng. Những nỗi sợ ấy đã nuôi dưỡng My từ một cô gái luôn vui vẻ, chau chuốt bản thân, ra đường phải ngó trước nhìn sau xem đã đẹp chưa mới dám bước ra đường thành một người phụ nữ đầu xù tóc rối, ngoại hình thì sồ sề vì lên cân không kiểm soát. Những bộ đồ mà My mặc lúc ấy là đồ của mẹ, chỉ có đồ mẹ mới vừa thân hình My, mới làm cho My cảm thấy thoải mái được.</p>
+        <p>Từ bỏ công việc nhà nước để ra ngoài kinh doanh với mục tiêu kiếm thật nhiều tiền để có tự lo cho bản thân mình, lo cho con và để những người đã làm tổn thương My phải công nhận là My có thể tự mình kiếm tiền và kiếm rất nhiều tiền.</p>
+
+        <p>Lao vào vòng xoáy của công việc, cứ có tiền là My vui mà chưa 1 lần nhìn lại mình cho đến khi My nhận được 1 câu nói từ cô giáo mầm non của con My:</p>
+
+        <div class="story-portrait-inline">
+          <img class="real-img" src="images/story-inline-1.webp" alt="" style="aspect-ratio:800/750;">
+        </div>
+
+        <p>"Chị My ơi, em thấy chị xinh lắm ấy nhưng mà lần sau đi đón bé, chị mặc đồ đẹp hơn nè, mấy cô trong trường nói nhìn chị không ai nghĩ chị là chủ nhà hàng lớn luôn ấy".</p>
+        <p>Trời ơi, câu nói đã làm My bừng tỉnh, My soi mình trong gương suốt 1 tiếng đồng hồ, 1 người phụ nữ tóc dài nhưng chỉ cuộn tròn lấy thun cột lại cho tiện công việc, chiếc quần lửng màu đen thần thánh của Mẹ cho mượn ngày sinh bé lên đến 61kg không mặc vừa bộ đồ nào, cái áo sơ mi hoa hoa mà nó lạ lắm nhăn nhăn nhúm nhúm lại còn xoăn xoăn gấu áo, lục lại album hình cưới, lục lại những tấm hình hồi con gái My tự hỏi chính mình là:</p>
+        <p>My đang làm gì vậy? Sao My lại có thể tàn tạ đến nông nỗi này? Những gì My đang làm có ý nghĩa gì mà lại sống chết vì nó quên luôn cả bản thân mình như thế?</p>
+        <p><b>"My không thể sống như thế này nữa"</b> câu nói văng vẳng trong đầu My những ngày sau đó, dòng nước mắt cứ tuôn rơi trong vô thức và những đêm mất ngủ nằm ngắm nhìn con.</p>
+        <p>Câu nói ấy chính là động lực cho việc tìm lại chính mình và sống 1 cuộc đời thật hạnh phúc của My.</p>
+        <p class="story-cta">Hành trình thay đổi cuộc đời của My bắt đầu diễn ra, khi học trò sẵn sàng thì người Thầy sẽ xuất hiện.</p>
+
+        <p>Và cũng từ đó My nhận ra một bài học vô cùng lớn, bài học lớn nhất với mỗi người nó nằm ở chính cái giai đoạn hôn nhân, nỗi đau mà có thể xé nát trái tim một người phụ nữ cũng ở chính giai đoạn hôn nhân này.</p>
+        <p>Nhận ra rồi thì phải làm sao, chính My lúc ấy cũng loay hoay mãi không biết làm gì, càng làm sao My thấy có gì đó cứ sai sai. Mình nghĩ là mình đã hiểu hết, biết hết thì phải hạnh phúc chứ.</p>
+        <p>Người thầy đầu tiên đến, giúp My hiểu được giá trị của bản thân mình và bài học đầu tiên My nhận được là <b>sự tự tin.</b></p>
+        <p>Người thầy thứ hai giúp My hiểu được nguồn gốc của sự khổ đau đến từ đâu, ý nghĩa của cuộc sống này thực sự là gì. Đó cũng là lúc My nhận ra <b>nguyên nhân vì sao cuộc hôn nhân đầy màu hồng của My lại trở nên xám xịt</b> sau một thời gian chung sống rất ngắn như vậy.</p>
+        <p>Người thầy thứ 3, giúp My nhận ra <b>chúng ta đến với thế giới này với những thử thách sẵn có,</b> điều quan trọng là mình không nhận ra và không biết cách để nhận ra. Để rồi khi mà mình chưa đủ năng lực mà thử thách ập đến, nó sẽ như một cơn sóng nhấn chìm bạn.</p>
+
+        <p>Đến lúc này My đã tự tin để vẽ nên tấm <b>BẢN ĐỒ HẠNH PHÚC</b> cho chính mình và đang mỗi ngày hoàn thiện mình hơn. My tự tin với hạnh phúc của mình và muốn lan tỏa những hạt giống hạnh phúc đến những người phụ nữ đang phải gồng mình chịu khổ, chịu thiệt thòi trong một cuộc hôn nhân bế tắc mà chưa tìm được lối ra.</p>
+
+        <div class="story-portrait-inline">
+          <img class="real-img" src="images/story-inline-2.webp" alt="" style="aspect-ratio:800/800;">
+        </div>
+
+        <p>Thử thách một lần nữa ập đến với cuộc hôn nhân của My, My đứng trước sự lựa chọn giữa gia đình và sự nghiệp mà My không thể nào đưa ra sự lựa chọn. Thực sự đó là cơn sóng thần trong nội tâm My lúc ấy chứ không còn đơn giản là sóng lớn, sóng nhỏ nữa. Vì đã trang bị cho mình kĩ năng nhận diện thử thách, My như người bừng tỉnh sau cơn mê khi biết rằng thử thách lần này nó chính là thử thách của 9 năm về trước.</p>
+        <p>My vỡ ra QUY LUẬT HẠNH PHÚC trong thử thách lần này. Giọt nước mắt vỡ òa vì hạnh phúc, cái ôm thực sự từ trái tim My ôm chầm lấy chồng My lúc ấy, ôi sao hạnh phúc nó đơn giản đến thế mà My cứ đi tìm kiếm nó ở tận đẩu tận đâu và My đã câu trả lời ngay lúc ấy, My chọn Gia đình nhỏ, chọn cách quay trở lại yêu người chồng My đã giận, đã hận, đã ghét bỏ suốt bao nhiêu năm tháng.</p>
+        <p>Và cũng là lúc người thầy thứ tư xuất hiện, My hiểu được <b>giá trị của một cuộc hôn nhân thực sự là gì,</b> lúc này My mới biết My chưa bao giờ biết xây dựng hôn nhân là gì nên cái giá phải trả cho những năm tháng khổ đau là hoàn toàn xứng đáng.</p>
+
+        <div class="story-portrait-inline">
+          <img class="real-img" src="images/story-inline-3.webp" alt="" style="aspect-ratio:800/800;">
+        </div>
+
+        <p>- Với cách giải mã nguyên nhân thấu triệt từ những gì bạn nghĩ nó ở thế giới tâm linh huyền bí đến đời sống mà bạn đang trải nghiệm, bạn sẽ không còn mơ hồ "vì sao tôi lại khổ thế này?" nữa.<br>
+        - My sẽ trao cho bạn công cụ để giúp bạn nhận diện thử thách để chuẩn bị sẵn sàng vượt qua những cơn sóng lớn trong cuộc đời bạn. Nó cũng giống như cách bạn cần phải học bơi khi biết có ngày bạn sẽ phải bơi qua sông mà không có đò.<br>
+        - Hiểu được sự khác biệt giữa nam và nữ nói chung và sự khác biệt giữa bạn và người bạn đời bên cạnh bạn nói riêng, tiền đề của sự thấu hiểu và sẻ chia chính là ở đây.</p>
+
+        <p>Tổng hợp hết tất cả, qua zoom tư vấn 1:1, My sẽ giúp bạn có cho mình một <b>TẤM BẢN ĐỒ HẠNH PHÚC</b> và việc của bạn là chỉ tự tin bước từng bước theo chỉ dẫn trong tấm bản đồ đó thôi.</p>
+        <p>Hẹn gặp lại bạn trong buổi tư vấn<br>Thân ái<br><b>Trà My</b></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY STRIP ============ -->
+<section class="gallery-section shared-bg">
+  <div class="wrap" style="max-width:100%;">
+    <h2 style="text-align:center;color:var(--navy);font-size:28px;margin-bottom:30px;">NHỮNG NGƯỜI ĐÃ THAM GIA TƯ VẤN NÓI GÌ</h2>
+    <div class="gallery-strip">
+      <img class="real-img" src="images/gallery-01.webp" alt="" style="min-width:180px;aspect-ratio:650/1230;flex:0 0 auto;border-radius:10px;">
+      <img class="real-img" src="images/gallery-02.webp" alt="" style="min-width:180px;aspect-ratio:650/1230;flex:0 0 auto;border-radius:10px;">
+      <img class="real-img" src="images/gallery-03.webp" alt="" style="min-width:180px;aspect-ratio:650/1230;flex:0 0 auto;border-radius:10px;">
+      <img class="real-img" src="images/gallery-04.webp" alt="" style="min-width:180px;aspect-ratio:650/1230;flex:0 0 auto;border-radius:10px;">
+      <img class="real-img" src="images/gallery-05.webp" alt="" style="min-width:180px;aspect-ratio:650/1230;flex:0 0 auto;border-radius:10px;">
+      <img class="real-img" src="images/gallery-06.webp" alt="" style="min-width:180px;aspect-ratio:650/1230;flex:0 0 auto;border-radius:10px;">
+      <img class="real-img" src="images/gallery-07.webp" alt="" style="min-width:180px;aspect-ratio:650/1230;flex:0 0 auto;border-radius:10px;">
+      <img class="real-img" src="images/gallery-08.webp" alt="" style="min-width:180px;aspect-ratio:650/1230;flex:0 0 auto;border-radius:10px;">
+      <img class="real-img" src="images/gallery-09.webp" alt="" style="min-width:180px;aspect-ratio:650/1230;flex:0 0 auto;border-radius:10px;">
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA / FORM (có ảnh nền riêng) ============ -->
+<section class="final-section" id="dangky" style="background-image:url('images/section-bg-final.webp');background-size:cover;background-position:center;">
+  <div class="final-inner">
+    <div class="wrap">
+      <div class="free-line">Đăng Ký Ngay Hôm Nay <span class="free">HOÀN TOÀN MIỄN PHÍ</span></div>
+      <form class="final-form" id="finalForm">
+        <input class="form-field" type="text" name="name" placeholder="Tên" required>
+        <input class="form-field" type="tel" name="phone" placeholder="Số điện thoại" pattern="(\+84|0){1}(9|8|7|5|3){1}[0-9]{8}" required>
+        <textarea class="form-field" name="age" placeholder="Độ tuổi" rows="2" required></textarea>
+        <button class="btn-primary" type="submit">TÔI ĐÃ HOÀN TẤT - CHO TÔI THAM GIA NHÓM HỖ TRỢ</button>
+        <p class="note">(Bạn vui lòng điền đầy đủ thông tin để hoàn tất việc đăng ký)<br>(Thông tin của bạn sẽ hoàn toàn được bảo mật)</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>© 2026 Tư Vấn 1:1 Cùng Trà My</footer>
+
+<script>
+/* =====================================================================
+   TODO — GẮN GOOGLE SHEETS Ở ĐÂY
+   1. Thay YOUR_APPS_SCRIPT_WEB_APP_URL bằng URL Web App bạn deploy từ
+      Google Apps Script (xem hướng dẫn kèm theo trong DEPLOY.md).
+   2. Thay ZALO_GROUP_LINK bằng link nhóm Zalo thật của bạn.
+===================================================================== */
+const GOOGLE_SHEET_ENDPOINT = "https://script.google.com/macros/s/AKfycbz-jl4yIDvJEeRHVE-GrRIfmz34u2UtrgBD8N2Vr8I4ZK4R55qs6Vjqq9qEhv0AEyr5vw/exec";
+const ZALO_GROUP_LINK = "https://zalo.me/g/vh6vyxjcvobu3zgdihub";
+
+async function handleSubmit(e){
+  e.preventDefault();
+  const form = e.target;
+  const data = Object.fromEntries(new FormData(form).entries());
+  data.source_page = "landing_tu_van_1_1";
+  data.submitted_at = new Date().toISOString();
+
+  const btn = form.querySelector('button[type=submit]');
+  const originalText = btn.textContent;
+  btn.textContent = "Đang gửi...";
+  btn.disabled = true;
+
+  try{
+    await fetch(GOOGLE_SHEET_ENDPOINT, {
+      method: "POST",
+      mode: "no-cors",
+      headers: {"Content-Type":"text/plain"},
+      body: JSON.stringify(data)
+    });
+  }catch(err){
+    console.error("Gửi form lỗi:", err);
+  }finally{
+    window.location.href = ZALO_GROUP_LINK;
+  }
+}
+
+document.getElementById('heroForm').addEventListener('submit', handleSubmit);
+document.getElementById('finalForm').addEventListener('submit', handleSubmit);
+</script>
+
+</body>
+</html>
